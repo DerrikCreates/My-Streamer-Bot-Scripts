@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "streamerbottest", "streamerbottest\streamerbottest.csproj", "{A33E16ED-69CD-4CDE-A59F-A28643622EFD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scripts", "Scripts\Scripts.csproj", "{F5B34261-1A0C-4C51-8934-7CCE3122BDDB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +8,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A33E16ED-69CD-4CDE-A59F-A28643622EFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A33E16ED-69CD-4CDE-A59F-A28643622EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A33E16ED-69CD-4CDE-A59F-A28643622EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A33E16ED-69CD-4CDE-A59F-A28643622EFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5B34261-1A0C-4C51-8934-7CCE3122BDDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5B34261-1A0C-4C51-8934-7CCE3122BDDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5B34261-1A0C-4C51-8934-7CCE3122BDDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5B34261-1A0C-4C51-8934-7CCE3122BDDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

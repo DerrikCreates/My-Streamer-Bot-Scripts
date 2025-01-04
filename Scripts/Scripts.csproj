@@ -5,15 +5,14 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{A33E16ED-69CD-4CDE-A59F-A28643622EFD}</ProjectGuid>
+        <ProjectGuid>{F5B34261-1A0C-4C51-8934-7CCE3122BDDB}</ProjectGuid>
         <OutputType>Exe</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>streamerbottest</RootNamespace>
-        <AssemblyName>streamerbottest</AssemblyName>
+        <RootNamespace>Scripts</RootNamespace>
+        <AssemblyName>Scripts</AssemblyName>
         <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-        <LangVersion>default</LangVersion>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <PlatformTarget>AnyCPU</PlatformTarget>
@@ -36,185 +35,185 @@
     </PropertyGroup>
     <ItemGroup>
         <Reference Include="AudioDevices">
-          <HintPath>dependencies\AudioDevices.dll</HintPath>
+          <HintPath>..\dependencies\AudioDevices.dll</HintPath>
         </Reference>
         <Reference Include="AudioPlayback">
-          <HintPath>dependencies\AudioPlayback.dll</HintPath>
+          <HintPath>..\dependencies\AudioPlayback.dll</HintPath>
         </Reference>
         <Reference Include="Common">
-          <HintPath>dependencies\Common.dll</HintPath>
+          <HintPath>..\dependencies\Common.dll</HintPath>
         </Reference>
         <Reference Include="LiteDB">
-          <HintPath>dependencies\LiteDB.dll</HintPath>
+          <HintPath>..\dependencies\LiteDB.dll</HintPath>
         </Reference>
         <Reference Include="LumiaSdk">
-          <HintPath>dependencies\LumiaSdk.dll</HintPath>
+          <HintPath>..\dependencies\LumiaSdk.dll</HintPath>
         </Reference>
         <Reference Include="Markdig.Signed">
-          <HintPath>dependencies\Markdig.Signed.dll</HintPath>
+          <HintPath>..\dependencies\Markdig.Signed.dll</HintPath>
         </Reference>
         <Reference Include="MathParser.org-mXparser">
-          <HintPath>dependencies\MathParser.org-mXparser.dll</HintPath>
+          <HintPath>..\dependencies\MathParser.org-mXparser.dll</HintPath>
         </Reference>
         <Reference Include="Mono.Cecil">
-          <HintPath>dependencies\Mono.Cecil.dll</HintPath>
+          <HintPath>..\dependencies\Mono.Cecil.dll</HintPath>
         </Reference>
         <Reference Include="Mono.Cecil.Mdb">
-          <HintPath>dependencies\Mono.Cecil.Mdb.dll</HintPath>
+          <HintPath>..\dependencies\Mono.Cecil.Mdb.dll</HintPath>
         </Reference>
         <Reference Include="Mono.Cecil.Pdb">
-          <HintPath>dependencies\Mono.Cecil.Pdb.dll</HintPath>
+          <HintPath>..\dependencies\Mono.Cecil.Pdb.dll</HintPath>
         </Reference>
         <Reference Include="Mono.Cecil.Rocks">
-          <HintPath>dependencies\Mono.Cecil.Rocks.dll</HintPath>
+          <HintPath>..\dependencies\Mono.Cecil.Rocks.dll</HintPath>
         </Reference>
         <Reference Include="NAudio">
-          <HintPath>dependencies\NAudio.dll</HintPath>
+          <HintPath>..\dependencies\NAudio.dll</HintPath>
         </Reference>
         <Reference Include="NAudio.Asio">
-          <HintPath>dependencies\NAudio.Asio.dll</HintPath>
+          <HintPath>..\dependencies\NAudio.Asio.dll</HintPath>
         </Reference>
         <Reference Include="NAudio.Core">
-          <HintPath>dependencies\NAudio.Core.dll</HintPath>
+          <HintPath>..\dependencies\NAudio.Core.dll</HintPath>
         </Reference>
         <Reference Include="NAudio.Midi">
-          <HintPath>dependencies\NAudio.Midi.dll</HintPath>
+          <HintPath>..\dependencies\NAudio.Midi.dll</HintPath>
         </Reference>
         <Reference Include="NAudio.Vorbis">
-          <HintPath>dependencies\NAudio.Vorbis.dll</HintPath>
+          <HintPath>..\dependencies\NAudio.Vorbis.dll</HintPath>
         </Reference>
         <Reference Include="NAudio.Wasapi">
-          <HintPath>dependencies\NAudio.Wasapi.dll</HintPath>
+          <HintPath>..\dependencies\NAudio.Wasapi.dll</HintPath>
         </Reference>
         <Reference Include="NAudio.WinForms">
-          <HintPath>dependencies\NAudio.WinForms.dll</HintPath>
+          <HintPath>..\dependencies\NAudio.WinForms.dll</HintPath>
         </Reference>
         <Reference Include="NAudio.WinMM">
-          <HintPath>dependencies\NAudio.WinMM.dll</HintPath>
+          <HintPath>..\dependencies\NAudio.WinMM.dll</HintPath>
         </Reference>
         <Reference Include="Newtonsoft.Json">
-          <HintPath>dependencies\Newtonsoft.Json.dll</HintPath>
+          <HintPath>..\dependencies\Newtonsoft.Json.dll</HintPath>
         </Reference>
         <Reference Include="NVorbis">
-          <HintPath>dependencies\NVorbis.dll</HintPath>
+          <HintPath>..\dependencies\NVorbis.dll</HintPath>
         </Reference>
         <Reference Include="ObjectListView">
-          <HintPath>dependencies\ObjectListView.dll</HintPath>
+          <HintPath>..\dependencies\ObjectListView.dll</HintPath>
         </Reference>
         <Reference Include="ObsWebsocket">
-          <HintPath>dependencies\ObsWebsocket.dll</HintPath>
+          <HintPath>..\dependencies\ObsWebsocket.dll</HintPath>
         </Reference>
         <Reference Include="ScintillaNET">
-          <HintPath>dependencies\ScintillaNET.dll</HintPath>
+          <HintPath>..\dependencies\ScintillaNET.dll</HintPath>
         </Reference>
         <Reference Include="Semver">
-          <HintPath>dependencies\Semver.dll</HintPath>
+          <HintPath>..\dependencies\Semver.dll</HintPath>
         </Reference>
         <Reference Include="Sentry">
-          <HintPath>dependencies\Sentry.dll</HintPath>
+          <HintPath>..\dependencies\Sentry.dll</HintPath>
         </Reference>
         <Reference Include="Serilog">
-          <HintPath>dependencies\Serilog.dll</HintPath>
+          <HintPath>..\dependencies\Serilog.dll</HintPath>
         </Reference>
         <Reference Include="Serilog.Sinks.Async">
-          <HintPath>dependencies\Serilog.Sinks.Async.dll</HintPath>
+          <HintPath>..\dependencies\Serilog.Sinks.Async.dll</HintPath>
         </Reference>
         <Reference Include="Serilog.Sinks.File">
-          <HintPath>dependencies\Serilog.Sinks.File.dll</HintPath>
+          <HintPath>..\dependencies\Serilog.Sinks.File.dll</HintPath>
         </Reference>
         <Reference Include="Speech">
-          <HintPath>dependencies\Speech.dll</HintPath>
+          <HintPath>..\dependencies\Speech.dll</HintPath>
         </Reference>
         <Reference Include="Streamer.bot.Auth">
-          <HintPath>dependencies\Streamer.bot.Auth.dll</HintPath>
+          <HintPath>..\dependencies\Streamer.bot.Auth.dll</HintPath>
         </Reference>
         <Reference Include="Streamer.bot.Common">
-          <HintPath>dependencies\Streamer.bot.Common.dll</HintPath>
+          <HintPath>..\dependencies\Streamer.bot.Common.dll</HintPath>
         </Reference>
         <Reference Include="Streamer.bot.CrowdControl">
-          <HintPath>dependencies\Streamer.bot.CrowdControl.dll</HintPath>
+          <HintPath>..\dependencies\Streamer.bot.CrowdControl.dll</HintPath>
         </Reference>
         <Reference Include="Streamer.bot.DonorDrive">
-          <HintPath>dependencies\Streamer.bot.DonorDrive.dll</HintPath>
+          <HintPath>..\dependencies\Streamer.bot.DonorDrive.dll</HintPath>
         </Reference>
         <Reference Include="Streamer.bot.Elgato">
-          <HintPath>dependencies\Streamer.bot.Elgato.dll</HintPath>
+          <HintPath>..\dependencies\Streamer.bot.Elgato.dll</HintPath>
         </Reference>
         <Reference Include="Streamer.bot.EmoteHandlers">
-          <HintPath>dependencies\Streamer.bot.EmoteHandlers.dll</HintPath>
+          <HintPath>..\dependencies\Streamer.bot.EmoteHandlers.dll</HintPath>
         </Reference>
         <Reference Include="Streamer.bot.HypeRate">
-          <HintPath>dependencies\Streamer.bot.HypeRate.dll</HintPath>
+          <HintPath>..\dependencies\Streamer.bot.HypeRate.dll</HintPath>
         </Reference>
         <Reference Include="Streamer.bot.Meld.Studio">
-          <HintPath>dependencies\Streamer.bot.Meld.Studio.dll</HintPath>
+          <HintPath>..\dependencies\Streamer.bot.Meld.Studio.dll</HintPath>
         </Reference>
         <Reference Include="Streamer.bot.Mtion">
-          <HintPath>dependencies\Streamer.bot.Mtion.dll</HintPath>
+          <HintPath>..\dependencies\Streamer.bot.Mtion.dll</HintPath>
         </Reference>
         <Reference Include="Streamer.bot.Pally.gg">
-          <HintPath>dependencies\Streamer.bot.Pally.gg.dll</HintPath>
+          <HintPath>..\dependencies\Streamer.bot.Pally.gg.dll</HintPath>
         </Reference>
         <Reference Include="Streamer.bot.Plugin.Interface">
-          <HintPath>dependencies\Streamer.bot.Plugin.Interface.dll</HintPath>
+          <HintPath>..\dependencies\Streamer.bot.Plugin.Interface.dll</HintPath>
         </Reference>
         <Reference Include="Streamer.bot.PolyPop">
-          <HintPath>dependencies\Streamer.bot.PolyPop.dll</HintPath>
+          <HintPath>..\dependencies\Streamer.bot.PolyPop.dll</HintPath>
         </Reference>
         <Reference Include="Streamer.bot.Pulsoid">
-          <HintPath>dependencies\Streamer.bot.Pulsoid.dll</HintPath>
+          <HintPath>..\dependencies\Streamer.bot.Pulsoid.dll</HintPath>
         </Reference>
         <Reference Include="Streamer.bot.StreamElements">
-          <HintPath>dependencies\Streamer.bot.StreamElements.dll</HintPath>
+          <HintPath>..\dependencies\Streamer.bot.StreamElements.dll</HintPath>
         </Reference>
         <Reference Include="Streamer.bot.Streamlabs">
-          <HintPath>dependencies\Streamer.bot.Streamlabs.dll</HintPath>
+          <HintPath>..\dependencies\Streamer.bot.Streamlabs.dll</HintPath>
         </Reference>
         <Reference Include="Streamer.bot.ThrowingSystem">
-          <HintPath>dependencies\Streamer.bot.ThrowingSystem.dll</HintPath>
+          <HintPath>..\dependencies\Streamer.bot.ThrowingSystem.dll</HintPath>
         </Reference>
         <Reference Include="Streamer.bot.TipeeeStream">
-          <HintPath>dependencies\Streamer.bot.TipeeeStream.dll</HintPath>
+          <HintPath>..\dependencies\Streamer.bot.TipeeeStream.dll</HintPath>
         </Reference>
         <Reference Include="Streamer.bot.TreatStream">
-          <HintPath>dependencies\Streamer.bot.TreatStream.dll</HintPath>
+          <HintPath>..\dependencies\Streamer.bot.TreatStream.dll</HintPath>
         </Reference>
         <Reference Include="Streamer.bot.Trovo">
-          <HintPath>dependencies\Streamer.bot.Trovo.dll</HintPath>
+          <HintPath>..\dependencies\Streamer.bot.Trovo.dll</HintPath>
         </Reference>
         <Reference Include="Streamer.bot.VoiceMod">
-          <HintPath>dependencies\Streamer.bot.VoiceMod.dll</HintPath>
+          <HintPath>..\dependencies\Streamer.bot.VoiceMod.dll</HintPath>
         </Reference>
         <Reference Include="Streamer.bot.VTubeStudio">
-          <HintPath>dependencies\Streamer.bot.VTubeStudio.dll</HintPath>
+          <HintPath>..\dependencies\Streamer.bot.VTubeStudio.dll</HintPath>
         </Reference>
         <Reference Include="Streamer.bot.Website">
-          <HintPath>dependencies\Streamer.bot.Website.dll</HintPath>
+          <HintPath>..\dependencies\Streamer.bot.Website.dll</HintPath>
         </Reference>
         <Reference Include="Streamer.bot.YouTube">
-          <HintPath>dependencies\Streamer.bot.YouTube.dll</HintPath>
+          <HintPath>..\dependencies\Streamer.bot.YouTube.dll</HintPath>
         </Reference>
         <Reference Include="System"/>
         <Reference Include="System.Core"/>
         <Reference Include="System.Data"/>
         <Reference Include="System.Xml"/>
         <Reference Include="Twitch.ChatClient">
-          <HintPath>dependencies\Twitch.ChatClient.dll</HintPath>
+          <HintPath>..\dependencies\Twitch.ChatClient.dll</HintPath>
         </Reference>
         <Reference Include="Twitch.ClientApi">
-          <HintPath>dependencies\Twitch.ClientApi.dll</HintPath>
+          <HintPath>..\dependencies\Twitch.ClientApi.dll</HintPath>
         </Reference>
         <Reference Include="Twitch.Common">
-          <HintPath>dependencies\Twitch.Common.dll</HintPath>
+          <HintPath>..\dependencies\Twitch.Common.dll</HintPath>
         </Reference>
         <Reference Include="Twitch.EventSub">
-          <HintPath>dependencies\Twitch.EventSub.dll</HintPath>
+          <HintPath>..\dependencies\Twitch.EventSub.dll</HintPath>
         </Reference>
         <Reference Include="Twitch.PubSub">
-          <HintPath>dependencies\Twitch.PubSub.dll</HintPath>
+          <HintPath>..\dependencies\Twitch.PubSub.dll</HintPath>
         </Reference>
         <Reference Include="websocket-sharp">
-          <HintPath>dependencies\websocket-sharp.dll</HintPath>
+          <HintPath>..\dependencies\websocket-sharp.dll</HintPath>
         </Reference>
     </ItemGroup>
     <ItemGroup>

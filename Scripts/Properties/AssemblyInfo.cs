@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("streamerbottest")]
+[assembly: AssemblyTitle("Scripts")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("streamerbottest")]
+[assembly: AssemblyProduct("Scripts")]
 [assembly: AssemblyCopyright("Copyright ©  2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("A33E16ED-69CD-4CDE-A59F-A28643622EFD")]
+[assembly: Guid("F5B34261-1A0C-4C51-8934-7CCE3122BDDB")]
 
 // Version information for an assembly consists of the following four values:
 //
