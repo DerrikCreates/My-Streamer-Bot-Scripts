@@ -129,6 +129,7 @@
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=P_003A_005CStreamerBot_005CNewtonsoft_002EJson_002Edll/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=P_003A_005CStreamerBot_005CNAudio_002Edll/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=P_003A_005CStreamerBot_005CNAudio_002ECore_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AJObject_002Ecs_002Fl_003AC_0021_003FUsers_003FDerrik_003FAppData_003FRoaming_003FJetBrains_003FRider2024_002E3_003Fresharper_002Dhost_003FSourcesCache_003F443ce614ff11fd4152a3c735dec9ef388c537ef8ea9c24e0f018f1bd619e85_003FJObject_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
   &lt;Assembly Path="P:\StreamerBot\Streamer.bot.Common.dll" /&gt;&#xD;
 &lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>
