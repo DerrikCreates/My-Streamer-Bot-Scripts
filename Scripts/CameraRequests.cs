@@ -1,10 +1,8 @@
 using System;
 using System.IO;
 using System.Net;
-using System.Runtime.InteropServices.WindowsRuntime;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using ScintillaNET;
 using Streamer.bot.Plugin.Interface;
 
 namespace Scripts
@@ -105,34 +103,32 @@ namespace Scripts
             var url = $"http://localhost:5555/GetCamera/{camName}"; // Replace with your API URL
 
             var request = (HttpWebRequest)WebRequest.Create(url);
-            request.Method = "GET";
-            request.ContentType = "application/json";
+            request.Method = WebRequestMethods.Http.Get;
+            //request.ContentType = "application/json";
 
 
             var response = (HttpWebResponse)request.GetResponse();
             if (response.StatusCode != HttpStatusCode.OK)
             {
+                CPH.LogError($"failed to get camera data for preset statuscode:{response.StatusCode}");
                 return false;
             }
+
+            CPH.LogDebug($"Received response from server statuscode:{response.StatusCode}");
 
             using (var streamReader = new StreamReader(response.GetResponseStream()))
             {
                 var result = streamReader.ReadToEnd();
+                CPH.LogDebug($"Camera Raw Json:{result}");
 
-                JObject json = null;
-                try
-                {
-                    json = JObject.Parse(result);
-                }
-                catch (Exception ex)
-                {
-                    return false;
-                }
 
-                CPH.SetGlobalVar($"CamPreset_{camName}_{presetName}", JsonConvert.SerializeObject(json));
+                var globalName = $"CamPreset_{camName}_{presetName}";
+
+                CPH.LogDebug($"Parsed json! saving to global var {globalName}");
+                CPH.SetGlobalVar(globalName, result, true);
             }
 
-            return false;
+            return true;
         }
 
 
@@ -147,6 +143,7 @@ namespace Scripts
 
             if (parts.Length != 2)
             {
+                CPH.LogError("not enough arguements");
                 return false;
             }
 
@@ -167,13 +164,14 @@ namespace Scripts
             //CamPreset_{camName}_{presetName}
             var json = CPH.GetGlobalVar<string>($"CamPreset_{camName}_{presetName}", true);
 
+            CPH.LogDebug($"Loading camera preset json:{json}");
 
             if (string.IsNullOrEmpty(json))
             {
                 return false;
             }
 
-            var url = "http://localhost:5555/GetCamera"; // Replace with your API URL
+            var url = "http://localhost:5555/SetCamera"; // Replace with your API URL
 
             var request = (HttpWebRequest)WebRequest.Create(url);
             request.Method = "POST";
@@ -189,6 +187,12 @@ namespace Scripts
             var response = (HttpWebResponse)request.GetResponse();
             if (response.StatusCode != HttpStatusCode.OK)
             {
+                using (var sr = new StreamReader(response.GetResponseStream()))
+                {
+                    CPH.LogError(sr.ReadToEnd());
+                    sr.Close();
+                }
+
                 return false;
             }
 
